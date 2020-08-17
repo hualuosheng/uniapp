@@ -1,0 +1,62 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "登陆"
+			}
+		},
+		{
+			"path": "pages/main/main",
+			"style": {
+				"navigationBarTitleText": "发现"
+			}
+		}, {
+			"path": "pages/activity/activity",
+			"style": {
+				"navigationBarTitleText": "活动",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pagesA",
+		"pages": [{
+			"path": "canvas/index",
+			"style": {
+			}
+		}]
+	}],
+	"tabBar": {
+		"color": "#7e7e7e",
+		"selectedColor": "#4b73e8",
+		"backgroundColor": "#fcfbf9",
+		"list": [{
+			"pagePath": "pages/main/main",
+			"text": "发现",
+			"iconPath": "static/img/tab1.png",
+			"selectedIconPath": "static/img/tab1_sle.png"
+		}, {
+			"pagePath": "pages/activity/activity",
+			"text": "活动",
+			"iconPath": "static/img/tab2.png",
+			"selectedIconPath": "static/img/tab2_sle.png"
+		}, {
+			"pagePath": "pages/user/user",
+			"text": "我的",
+			"iconPath": "static/img/tab3.png",
+			"selectedIconPath": "static/img/tab3_sle.png"
+		}]
+	},
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#0faeff",
+		"backgroundColor": "#fbf9fe"
+	}
+}
